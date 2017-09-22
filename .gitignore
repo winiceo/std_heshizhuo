@@ -8,7 +8,9 @@
 /packages/*
 /config.php
 /pagekit*.zip
-/pagekit.db
+
 node_modules
 .DS_Store
 .idea
+.tx 
+.github
