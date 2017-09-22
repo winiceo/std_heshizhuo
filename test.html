@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html class="" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Pagekit">
+    <link rel="canonical" href="http://localhost:7777/price">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="admin">
+    <meta property="og:title" content="价格中心">
+    <meta property="og:url" content="http://localhost:7777/price">
+    <link href="/app/system/modules/theme/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/app/system/modules/theme/apple_touch_icon.png" rel="apple-touch-icon-precomposed">
+    <title>价格中心 | admin</title>
+    <link href="/packages/pagekit/theme-avion/css/theme.light.css?v=7563" rel="stylesheet">
+    <link href="/packages/pagekit/theme-avion/assets/kmcms.css?v=7563" rel="stylesheet">
+    <link href="/app/modules/debug/assets/css/debugbar.css?v=7563" rel="stylesheet">
+    <script>var $debugbar = {"current": "bcf4a35efcb1ffc666832c1965ad22219345e9c2"};</script>
+    <script>var $pagekit = {"url": "", "csrf": "c4dd87b82f2a037866e42a72b2bd150f63875a23"};</script>
+    <script>var $pkframework = {"google_maps_key": ""};</script>
+    <script src="/app/assets/jquery/dist2/jquery.min.js?v=7563"></script>
+    <script src="/app/assets/uikit/js/uikit.min.js?v=7563"></script>
+    <script src="/app/assets/uikit/js/components/sticky.min.js?v=7563"></script>
+    <script src="/app/assets/uikit/js/components/lightbox.min.js?v=7563"></script>
+    <script src="/app/assets/uikit/js/components/parallax.min.js?v=7563"></script>
+    <script src="/app/assets/uikit/js/components/datepicker.min.js?v=7563"></script>
+    <script src="/packages/pagekit/theme-avion/js/theme.js?v=7563"></script>
+    <script src="/packages/pagekit/theme-avion/js/particles.min.js?v=7563"></script>
+    <script src="/packages/pagekit/theme-avion/js/particles.jquery.js?v=7563"></script>
+    <script src="/packages/pagekit/theme-avion/assets/bower_components/gsap/src/minified/TweenMax.min.js?v=7563"></script>
+    <script src="/packages/pagekit/theme-avion/assets/bower_components/owl.carousel/dist/owl.carousel.js?v=7563"></script>
+    <script src="/packages/pagekit/theme-avion/assets/bower_components/wow/dist/wow.min.js?v=7563"></script>
+    <script src="/packages/pagekit/theme-avion/assets/bower_components/keymaster/keymaster.js?v=7563"></script>
+    <script src="/packages/pagekit/theme-avion/assets/js/init.js?v=7563"></script>
+    <script src="/app/assets/vue/dist/vue.js?v=7563"></script>
+    <script src="/app/assets/lodash/lodash.min.js?v=7563"></script>
+    <script src="/system/intl/zh_CN?v=7563"></script>
+    <script src="/app/system/app/bundle/vue.js?v=7563"></script>
+    <script src="/app/modules/debug/app/bundle/debugbar.js?v=7563"></script>
+
+</head>
+
+<body class="nk-main">
+
+
+<div class="nk-share-place">
+    <div>
+        <div class="container">
+            <div class="nk-share-icons" data-url="https://google.com/">
+                <div class="plusone nk-share-icon fa fa-google-plus" title="Share page on Google+"></div>
+                <div class="facebook nk-share-icon fa fa-facebook" title="Share page on Facebook"></div>
+                <div class="twitter nk-share-icon fa fa-twitter" title="Share page on Twitter"></div>
+                <div class="pinterest nk-share-icon fa fa-pinterest" title="Share page on Pinterest"></div>
+                <!-- <div class="vkontakte nk-share-icon fa fa-vk" title="Share page on VK"></div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END: Share Place -->
+
+
+<!--
+    Additional Classes:
+        .nk-header-opaque
+-->
+<header class="nk-header">
+
+
+    <!--
+        START: Top Contacts
+
+        Additional Classes:
+            .nk-contacts-top-light
+    -->
+    <div class="nk-contacts-top">
+        <div class="container">
+            <div class="nk-contacts-left">
+                <div class="nk-navbar">
+                    <ul class="nk-nav">
+
+                        <li><a href="tel:+37001231078"><span class="nk-contact-icon"><i
+                                class="ion-ios-telephone"></i></span> + 86 010 123456</a></li>
+                        <li><a href="mailto:info@khaki.com"><span class="nk-contact-icon"><i class="ion-ios-email"></i></span>
+                            info@71an.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nk-contacts-right">
+                <div class="nk-navbar">
+                    <ul class="nk-nav">
+                        <li><a href="https://twitter.com/" target="_blank" class="nk-contact-icon"><span
+                                class="ion-social-twitter"></span></a></li>
+                        <li><a href="https://dribbble.com/" target="_blank" class="nk-contact-icon"><span
+                                class="ion-social-dribbble-outline"></span></a></li>
+                        <li><a href="#" class="nk-contact-icon"><span class="ion-social-instagram-outline"></span></a>
+                        </li>
+                        <li><a href="#" class="nk-contact-icon"><span class="ion-social-pinterest"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Top Contacts -->
+
+
+    <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-sticky
+            .nk-navbar-transparent
+            .nk-navbar-autohide
+            .nk-navbar-light
+    -->
+    <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-autohide">
+        <div class="container">
+            <div class="nk-nav-table">
+
+                <!--                <a href="/index.html" class="nk-nav-logo">-->
+                <!--                    <img src="/__ASSETS__/images/logo.svg" alt="" width="70">-->
+                <!--                </a>-->
+
+                <a class="uk-navbar-brand" href="/">
+                    <img class="tm-logo uk-responsive-height uk-hidden-small" src="/storage/logo.svg" alt="">
+                    <img class="tm-logo-small uk-responsive-height uk-visible-small" src="/storage/logo.svg" alt="">
+                </a>
+
+                <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+
+                    <li class="active nk-drop-item">
+                        <a href="/">
+                            首页
+                        </a>
+                    </li>
+
+                    <li class=" nk-drop-item">
+                        <a href="#">
+                            产品中心
+
+                        </a>
+                        <ul class="dropdown">
+
+
+                            <li>
+                                <a href="/%E6%95%99%E8%82%B2%E4%BA%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">教育云解决方案</a>
+
+                            </li>
+
+
+                            <li>
+                                <a href="/%E7%9B%B4%E6%92%AD%E4%BA%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">直播云解决方案</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nk-drop-item">
+                        <a href="/price">
+                            价格中心
+
+                        </a>
+
+                    </li>
+
+                    <li class=" nk-drop-item">
+                        <a href="/brand">
+                            成功案例
+
+                        </a>
+
+                    </li>
+                    <li class=" nk-drop-item">
+                        <a href="/partner">
+                            合作与生态
+
+                        </a>
+
+                    </li>
+                    <li class=" nk-drop-item">
+                        <a href="#">
+                            关于我们
+                        </a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="/about-us">
+                                    关于我们
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/contact-us">
+                                    联系我们
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/join-us">
+                                    招商加盟
+
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- END: Navbar -->
+
+</header>
+
+
+<!--
+    START: Right Navbar
+
+    Additional Classes:
+        .nk-navbar-right-side
+        .nk-navbar-left-side
+        .nk-navbar-lg
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+-->
+
+<nav class="nk-navbar nk-navbar-side nk-navbar-right-side nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content"
+     id="nk-side">
+
+    <div class="nk-navbar-bg">
+        <div class="bg-image"
+             style="background-image: url('/packages/pagekit/theme-avion/assets/images/bg-nav-side.jpg')"></div>
+    </div>
+
+
+    <div class="nano">
+        <div class="nano-content">
+            <div class="nk-nav-table">
+
+                <a class="uk-navbar-brand" href="/">
+                    <img class="tm-logo uk-responsive-height uk-hidden-small" src="/storage/logo.svg" alt="">
+                    <img class="tm-logo-small uk-responsive-height uk-visible-small" src="/storage/logo.svg" alt="">
+                </a>
+
+
+                <!--
+                    Additional Classes:
+                        .nk-nav-row-top
+                        .nk-nav-row-center
+                        .nk-nav-row-bottom
+                -->
+                <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                    <ul class="nk-nav">
+
+                        <li>
+                            <a href="/page-about-me.html">
+                                About Me
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/page-about-us.html">
+                                About Us
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/page-team.html">
+                                Team
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/page-contact.html">
+                                Contact
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/page-coming-soon.html">
+                                Coming Soon
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/page-404.html">
+                                404
+
+                            </a>
+                        </li>
+                        <li class=" nk-drop-item">
+                            <a href="#">
+                                Sub Menu Example
+
+                            </a>
+                            <ul class="dropdown">
+
+                                <li>
+                                    <a href="#1">
+                                        Sub Item 1
+
+                                    </a>
+                                </li>
+                                <li class=" nk-drop-item">
+                                    <a href="#2">
+                                        Sub Item 2
+
+                                    </a>
+                                    <ul class="dropdown">
+
+                                        <li>
+                                            <a href="#1">
+                                                Sub Item 1
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#2">
+                                                Sub Item 2
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class=" nk-drop-item">
+                                    <a href="#3">
+                                        Sub Item 3
+
+                                    </a>
+                                    <ul class="dropdown">
+
+                                        <li>
+                                            <a href="#">
+                                                Sub Item
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class=" nk-drop-item">
+                                    <a href="#4">
+                                        Sub Item 4
+
+                                    </a>
+                                    <ul class="dropdown">
+
+                                        <li>
+                                            <a href="#">
+                                                Sub Item
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nk-nav-row">
+                    <div class="nk-nav-social">
+                        <ul>
+                            <li><a href="#" class="no-link-effect"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#" class="no-link-effect"><i class="ion-social-instagram-outline"></i></a></li>
+                            <li><a href="#" class="no-link-effect"><i class="ion-social-dribbble-outline"></i></a></li>
+                            <li><a href="#" class="no-link-effect"><i class="ion-social-pinterest"></i></a></li>
+                        </ul>
+                        <footer>
+                            <a href="http://nkdev.info" target="_blank">nK</a> &copy; 2016. All rights reserved
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- END: Right Navbar -->
+
+
+<!--
+START: Navbar Mobile
+
+Additional Classes:
+.nk-navbar-left-side
+.nk-navbar-right-side
+.nk-navbar-lg
+.nk-navbar-overlay-content
+.nk-navbar-light
+-->
+<div id="nk-nav-mobile" class="nk-navbar nk-navbar-side nk-navbar-left-side nk-navbar-overlay-content hidden-lg-up">
+    <div class="nano">
+        <div class="nano-content">
+            <div class="nk-nav-table">
+
+                <a class="uk-navbar-brand" href="/">
+                    <img class="tm-logo uk-responsive-height uk-hidden-small" src="/storage/logo.svg" alt="">
+                    <img class="tm-logo-small uk-responsive-height uk-visible-small" src="/storage/logo.svg" alt="">
+                </a>
+
+                <div class="nk-nav-row nk-nav-row-full nk-nav-row-top">
+                    <div class="nk-navbar-mobile-content">
+                        <ul class="nk-nav">
+                            <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="tm-top" class="tm-top uk-grid uk-grid-match"
+         data-uk-grid-margin>
+    <div class="uk-width-medium-1-1">
+
+        <div class="uk-panel    " data-particles>
+
+
+            <div class="nk-header-title nk-header-title-parallax nk-header-title-parallax-opacity">
+                <div class="bg-image">
+                    <div style="background-image: url('storage/price/top-banner.png');"></div>
+                </div>
+
+
+                <div class="uk-panel uk-panel-header   " data-particles>
+                    <div class="  "
+                         data-particles="{&quot;color&quot;:&quot;#fff&quot;}"
+                         style="position: relative;min-height: 400px;">
+                        <div id="particles-2"
+                             style="display: block; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px;">
+                            <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1200"
+                                    height="400"></canvas>
+                        </div>
+                        <div class="uk-position-relative uk-z-index" style="width:100%;padding-top:150px">
+                            <h1 class="uk-heading-large">底至冰点，为你节源开流</h1>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<link rel="stylesheet" type="text/css" href="http://demo.graygrids.com/themes/engage/assets/css/main.css">
+
+<div class="uk-container uk-container-center  ">
+
+
+    <div id="tm-main" class="tm-main uk-grid" data-uk-grid-match data-uk-grid-margin>
+        <div class="row vertical-gap">
+            <div class="col-md-6">
+                <!-- START: Tabs 1 -->
+                <div class="nk-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#tabs-1-1" role="tab" data-toggle="tab" aria-expanded="true">Tab 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tabs-1-2" role="tab" data-toggle="tab" aria-expanded="false">Tab 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tabs-1-3" role="tab" data-toggle="tab" aria-expanded="false">Tab 3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active show" id="tabs-1-1" aria-expanded="true">
+                            <div class="nk-gap-1"></div>
+
+                            <div class="nk-progress nk-count" data-progress="91" data-progress-mask="{$}%" data-nk-mask="{$}%">
+                                <div class="nk-progress-title">JavaScript</div>
+                                <div class="nk-progress-line">
+                                    <div style="width: 91%;">
+                                        <div class="nk-progress-percent">91%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nk-progress nk-count" data-progress="72" data-progress-mask="{$}%" data-nk-mask="{$}%">
+                                <div class="nk-progress-title">PHP</div>
+                                <div class="nk-progress-line">
+                                    <div style="width: 72%;">
+                                        <div class="nk-progress-percent">72%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nk-progress nk-count" data-progress="86" data-progress-mask="{$}%" data-nk-mask="{$}%">
+                                <div class="nk-progress-title">Photoshop</div>
+                                <div class="nk-progress-line">
+                                    <div style="width: 86%;">
+                                        <div class="nk-progress-percent">86%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nk-progress nk-count" data-progress="43" data-progress-mask="{$}%" data-nk-mask="{$}%">
+                                <div class="nk-progress-title">Paint</div>
+                                <div class="nk-progress-line">
+                                    <div style="width: 43%;">
+                                        <div class="nk-progress-percent">43%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nk-gap-1"></div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tabs-1-2" aria-expanded="false">
+                            <div class="nk-gap-1"></div>
+                            <div class="row vertical-gap">
+                                <div class="col-md-4">
+                                    <div class="nk-counter-2">
+                                        <div class="nk-count">86</div>
+                                        <h3 class="nk-counter-title h4">Projects</h3>
+                                        <div class="nk-gap"></div>
+                                        <p>
+                                            You'll set fifth. Grass replenish man male light may fly waters tree evening them hath They're to meat moving also.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="nk-counter-2">
+                                        <div class="nk-count">28</div>
+                                        <h3 class="nk-counter-title h4">Team Members</h3>
+                                        <div class="nk-gap"></div>
+                                        <p>
+                                            Appear our likeness own for a deep, firmament great whose fly saw thing earth saw. Fill divide whales blessed kind.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="nk-counter-2">
+                                        <div class="nk-count">37</div>
+                                        <h3 class="nk-counter-title h4">Awards Won</h3>
+                                        <div class="nk-gap"></div>
+                                        <p>
+                                            All blessed second creature fly were given moving was itself itself beginning you're behold creepeth of. Doesn't you two good.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nk-gap-1"></div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tabs-1-3" aria-expanded="false">
+                            <div class="nk-gap-1"></div>
+                            <div class="nk-plain-video nk-plain-video-enabled" data-video="https://vimeo.com/7977632" style="background-image: url(&quot;https://i.vimeocdn.com/video/35989560_640.jpg&quot;);"><iframe id="VideoWorker-0" src="https://player.vimeo.com/video/7977632?player_id=VideoWorker-0&amp;autopause=0&amp;autoplay=0&amp;loop=0" frameborder="0" style="visibility: hidden; opacity: 0;" data-ready="true"></iframe><span class="nk-video-plain-toggle"><span class="nk-video-icon"><i class="fa fa-play pl-5"></i></span></span></div>
+                            <div class="nk-gap-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Tabs 1 -->
+            </div>
+            <div class="col-md-6">
+                <!-- START: Tabs 2 -->
+                <div class="nk-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tabs-2-1" role="tab" data-toggle="tab">Tab 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#tabs-2-2" role="tab" data-toggle="tab">Tab 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tabs-2-3" role="tab" data-toggle="tab">Tab 3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade" id="tabs-2-1">
+                            <div class="nk-gap-1"></div>
+
+                            <div class="nk-progress nk-count" data-progress="91" data-progress-mask="{$}%" data-nk-count="91" data-nk-mask="{$}%">
+                                <div class="nk-progress-title">JavaScript</div>
+                                <div class="nk-progress-line">
+                                    <div style="width: 0%;">
+                                        <div class="nk-progress-percent"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nk-progress nk-count" data-progress="72" data-progress-mask="{$}%" data-nk-count="72" data-nk-mask="{$}%">
+                                <div class="nk-progress-title">PHP</div>
+                                <div class="nk-progress-line">
+                                    <div style="width: 0%;">
+                                        <div class="nk-progress-percent"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nk-progress nk-count" data-progress="86" data-progress-mask="{$}%" data-nk-count="86" data-nk-mask="{$}%">
+                                <div class="nk-progress-title">Photoshop</div>
+                                <div class="nk-progress-line">
+                                    <div style="width: 0%;">
+                                        <div class="nk-progress-percent"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nk-progress nk-count" data-progress="43" data-progress-mask="{$}%" data-nk-count="43" data-nk-mask="{$}%">
+                                <div class="nk-progress-title">Paint</div>
+                                <div class="nk-progress-line">
+                                    <div style="width: 0%;">
+                                        <div class="nk-progress-percent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nk-gap-1"></div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade show active" id="tabs-2-2">
+                            <div class="nk-gap-1"></div>
+                            <div class="row vertical-gap">
+                                <div class="col-md-4">
+                                    <div class="nk-counter-2">
+                                        <div class="nk-count">86</div>
+                                        <h3 class="nk-counter-title h4">Projects</h3>
+                                        <div class="nk-gap"></div>
+                                        <p>
+                                            You'll set fifth. Grass replenish man male light may fly waters tree evening them hath They're to meat moving also.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="nk-counter-2">
+                                        <div class="nk-count">28</div>
+                                        <h3 class="nk-counter-title h4">Team Members</h3>
+                                        <div class="nk-gap"></div>
+                                        <p>
+                                            Appear our likeness own for a deep, firmament great whose fly saw thing earth saw. Fill divide whales blessed kind.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="nk-counter-2">
+                                        <div class="nk-count">37</div>
+                                        <h3 class="nk-counter-title h4">Awards Won</h3>
+                                        <div class="nk-gap"></div>
+                                        <p>
+                                            All blessed second creature fly were given moving was itself itself beginning you're behold creepeth of. Doesn't you two good.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nk-gap-1"></div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tabs-2-3">
+                            <div class="nk-gap-1"></div>
+                            <div class="nk-plain-video nk-plain-video-enabled" data-video="https://vimeo.com/7977632" style="background-image: url(&quot;https://i.vimeocdn.com/video/35989560_640.jpg&quot;);"><iframe id="VideoWorker-1" src="https://player.vimeo.com/video/7977632?player_id=VideoWorker-1&amp;autopause=0&amp;autoplay=0&amp;loop=0" frameborder="0" style="visibility: hidden; opacity: 0;" data-ready="true"></iframe><span class="nk-video-plain-toggle"><span class="nk-video-icon"><i class="fa fa-play pl-5"></i></span></span></div>
+                            <div class="nk-gap-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Tabs 2 -->
+            </div>
+        </div>
+        <main class="uk-width-1-1">
+            <article class="uk-article">
+
+                <div class="col-md-12 col-sm-12 clearfix wow slideInLeft animated" data-wow-delay="0.3s"
+                     style="visibility: visible;-webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+                    <h3 class="small-title mb-50">Default Tab</h3>
+                    <div id="default-tab">
+
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" href="#home" aria-controls="home" role="tab"
+                                                    data-toggle="tab">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#profile" aria-controls="profile" role="tab"
+                                                    data-toggle="tab">Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#messages" aria-controls="messages"
+                                                    role="tab" data-toggle="tab">Messages</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#settings" aria-controls="settings"
+                                                    role="tab" data-toggle="tab">Settings</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <p>Boy desirous families prepared gay reserved add ecstatic say. Replied joy age visitor
+                                    nothing cottage. Mrs door paid led loud sure easy read. Hastily at perhaps as
+                                    neither or ye fertile tedious visitor. Use fine bed none call busy dull when. Quiet
+                                    ought match my right by table means. Principles up do in me favourable affronting.
+                                    Twenty mother denied effect we to do on.</p>
+                                <p>Contented get distrusts certainty nay are frankness concealed ham. On unaffected
+                                    resolution on considered of. No thought me husband or colonel forming effects. End
+                                    sitting shewing who saw besides son musical adapted.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="profile">
+                                <p>In as name to here them deny wise this. As rapid woody my he me which. Men but they
+                                    fail shew just wish next put. Led all visitor musical calling nor her. Within coming
+                                    figure sex things are. Pretended concluded did repulsive education smallness yet yet
+                                    described. Had country man his pressed shewing. No gate dare rose he. Eyes year if
+                                    miss he as upon.</p>
+                                <p>Or neglected agreeable of discovery concluded oh it sportsman. Week to time in john.
+                                    Son elegance use weddings separate. Ask too matter formed county wicket oppose
+                                    talent.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="messages">
+                                <p>Repulsive questions contented him few extensive supported. Of remarkably thoroughly
+                                    he appearance in. Supposing tolerably applauded or of be. Suffering unfeeling so
+                                    objection agreeable allowance me of. Ask within entire season sex common far who
+                                    family. As be valley warmth assure on. Park girl they rich hour new well way you.
+                                    Face ye be me been room we sons fond.</p>
+                                <p>Yourself required no at thoughts delicate landlord it be. Branched dashwood do is
+                                    whatever it. Farther be chapter at visited married in it pressed. By distrusts
+                                    procuring be oh frankness existence believing instantly if. Doubtful on an juvenile
+                                    as of servants insisted</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="settings">
+                                <p>As collected deficient objection by it discovery sincerity curiosity. Quiet decay who
+                                    round three world whole has mrs man. Built the china there tried jokes which gay
+                                    why. Assure in adieus wicket it is. But spoke round point and one joy. Offending her
+                                    moonlight men sweetness see unwilling. Often of it tears whole oh balls share
+                                    an.</p>
+                                <p>But why smiling man her imagine married. Chiefly can man her out believe manners
+                                    cottage colonel unknown.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+
+    </div>
+
+
+</div>
+
+<section id="tm-bottom-d"
+         class="tm-bottom-d uk-grid uk-grid-match"
+         data-uk-grid-margin>
+    <div class="uk-width-medium-1-1">
+
+        <div class="uk-panel   uk-padding-remove ">
+
+
+            <style>
+                .service-guarantee {
+                    position: relative;
+                    background: #292b2c;
+                }
+
+                .sg-ul {
+                    margin: 0 auto;
+                    width: 1200px;
+                    font-size: 0;
+                }
+
+                .sg-ul li {
+                    display: inline-block;
+                    padding: 25px 0;
+                    width: 25%;
+                    text-align: center;
+                }
+
+                .sg-item-bg {
+                    margin-right: 20px;
+                    width: 60px;
+                    height: 70px;
+                    line-height: 70px;
+                    text-align: center;
+                    background: url(storage/brand/polygon_bg.png) center no-repeat;
+                    font-size: 24px;
+                    color: #fff;
+                }
+
+                .sg-item-bg, .sg-ul li a .sg-text {
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #a9a9ad;
+                }
+            </style>
+            <div class="service-guarantee">
+                <ul class="sg-ul">
+                    <li>
+                        <a target="_blank" data-index="1" href="//www.jcloud.com/service/service.html#1"
+                           clstag="pageclick|keycount|jcloud_portal_201610251|17"><i class="sg-item-bg">专</i>
+                            <p class="sg-text">7*24小时售后支持</p></a>
+                    </li>
+                    <li>
+                        <a target="_blank" data-index="2" href="//www.jcloud.com/service/service.html#2"
+                           clstag="pageclick|keycount|jcloud_portal_201610251|18"><i class="sg-item-bg">尊</i>
+                            <p class="sg-text">VIP一对一服务</p></a>
+                    </li>
+                    <li>
+                        <a target="_blank" data-index="3" href="//www.jcloud.com/service/service.html#3"
+                           clstag="pageclick|keycount|jcloud_portal_201610251|19"><i class="sg-item-bg">备</i>
+                            <p class="sg-text">免费备案服务</p></a>
+                    </li>
+                    <li>
+                        <a target="_blank" data-index="4" href="//www.jcloud.com/service/service.html#4"
+                           clstag="pageclick|keycount|jcloud_portal_201610251|16"><i class="sg-item-bg">赔</i>
+                            <p class="sg-text">100倍故障延时赔偿</p></a>
+                    </li>
+                </ul>
+
+
+                <div class="sg-line"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<div id="tm-footer" class="tm-footer">
+
+    <a class="tm-totop-scroller uk-link-reset" data-uk-smooth-scroll href="#"></a>
+
+
+    <div class="uk-panel    ">
+
+
+        <footer class="nk-footer">
+
+            <div class="container">
+                <div class="nk-gap-4"></div>
+                <div class="row vertical-gap">
+                    <div class="col-md-3 col-lg-2">
+                        <div class="nk-widget">
+                            <div>
+                                <a href="#">
+                                    <img class="nk-img-fit" src="/storage/logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-4">
+
+                        <div class="nk-widget">
+                            <h4 class="nk-widget-title">联系我们</h4>
+                            <div>
+                                <ul class="nk-widget-contact">
+                                    <li>
+                                <span class="nk-widget-contact-icon">
+                                    <i class="ion-ios-email"></i>
+                                </span>
+                                        contact@71an.com
+                                    </li>
+                                    <li>
+                                <span class="nk-widget-contact-icon">
+                                    <i class="ion-ios-telephone"></i>
+                                </span>
+                                        + 86 010 1232343
+                                    </li>
+                                    <li>
+                                <span class="nk-widget-contact-icon">
+                                    <i class="ion-ios-home"></i>
+                                </span>
+                                        北京酒仙桥
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="nk-widget">
+                            <h4 class="nk-widget-title">解决方案</h4>
+                            <div>
+                                <ul class="nk-widget-categories">
+
+                                    {volist name="solution" id='item'}
+
+                                    <li>
+                                        <a href="{:url('solution/detail',array('id'=>$item['id']))}">
+                                            {$item['title']}
+                                        </a>
+                                    </li>
+                                    {/volist}
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="nk-widget">
+                            <h4 class="nk-widget-title">关于我们</h4>
+                            <div>
+                                <ul class="nk-widget-categories">
+                                    <li>
+                                        <a href="/about-us">关于我们</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contact-us">联系我们</a>
+                                    </li>
+                                    <li>
+                                        <a href="/join-us">招商加盟</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-gap-4"></div>
+            </div>
+
+            <div class="nk-copyright">
+                <div class="container text-center">
+                    71an.com &copy; 2017. All rights reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+
+<script src="/packages/pagekit/theme-avion/assets/bower_components/tether/dist/js/tether.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="/packages/pagekit/theme-avion/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<script src="/packages/pagekit/theme-avion/assets/js/init.js"></script>
+
+<script src="/packages/pagekit/theme-avion/assets/js/khaki.min.js"></script>
+<script src="/packages/pagekit/theme-avion/assets/js/khaki-init.js"></script>
+
+
+</body>
+</html>
